@@ -12,7 +12,7 @@ Este projeto foi criado para praticar conceitos básicos de programação em Pyt
 - Mensagens de vitória e derrota.
 
 ## 🛠️ Como Executar
-1. Certifique-se de ter o Python instalado (versão 3.x recomendada).
+1. Certifique-se de ter o Python instalado (versão 3.13.2 recomendada).
 2. Clone o repositório:
    ```bash
    git clone https://github.com/RageHTML/Jogo-da-Forca.git
