@@ -1,5 +1,8 @@
 # Jogo da Forca em Python
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 Um jogo da forca simples desenvolvido em Python como parte dos meus estudos em Ciência da Computação.
 
 ## 🎯 Objetivo
