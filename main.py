@@ -1,12 +1,79 @@
-import random
+import random # usamos random para escolher de forma aleatoria as palavras disponíveis.
+from tabulate import tabulate
 from collections import Counter
 
-# Palavras disponíveis para o jogo da forca
-palavras_disponiveis = '''mecanico droga sexo cigarro rothmans skate deyvid carro casa passaro'''
 
-# Escolher uma das palavras disponíveis
-selecionar_palavras = palavras_disponiveis.split(' ')  # Corrigido o delimitador
-palavra = random.choice(selecionar_palavras)
+
+# A váriavel (palavras_disponivel) disponibiliza diversas palavras da área de TI para serem selecionada apenas uma.
+# 1 - A alteraçaõ das palavras é muito fácil, mas precisam seguir um padrão. 
+# 2 - Coloque as palavras uma abaixo da outra e usem ('''  ''') - sem as chaves: "()"
+# 3 - Não coloque vírgulas não é necessário.
+
+palavras_disponiveis = '''
+Software
+Internet 
+Rede Servidor
+Nuvem
+Banco de dados
+Algoritmo
+Programação
+Código
+Framework
+Interface
+Usabilidade
+Sistema
+Aplicativo
+Desenvolvedor
+Debug
+Compilador
+Script
+Linguagem
+Python
+JavaScript
+HTML
+CSS
+Backend
+Frontend
+API
+Prtocolo
+Firewall
+Segurança
+Backup
+Cache
+Domínio
+Hospedagem
+Virtualização
+Container
+DevOps
+Inteligência Artificial
+Machine Learning
+Big Data
+IoT 
+Blockchain
+Criptografia
+Autenticação
+Responsivo
+Open Source
+Kernel
+Terminal
+Pipeline
+Versionamento  # <- altere aqui se quiser adicionar mais palavras.
+'''
+
+# Organizar as palavras_disponiveis em uma lista:
+# 1 - O método spitlines() retorna uma lista das palavras selecionadas separadas e organizadas, esse método é muito útil para processar e manipular textos em Python!. 
+
+organizar_em_lista = palavras_disponiveis.splitlines() 
+
+# Como saber as respostas e ganhar o jogo de forma fácil:
+# 1 - tire a "#" para ativar, coloque a "#" para desativar.
+# 2 - agora todas as palavras vão aparecer no seu terminal.
+
+print(tabulate(palavras_disponiveis, headers=["Palavras"], tablefmt="grid")) 
+
+# Agora que as palavras estão organizadas em listas, vamos selecionar a palagvra principal do nosso jogo.
+# usamos random 
+palavra = random.choice(organizar_em_lista) 
 
 if __name__ == '__main__':
     print("Descubra a palavra!")
